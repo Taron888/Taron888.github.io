@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-@media only screen and (max-device-width: 1400px){
 body{
     margin:0px;
 }
@@ -874,9 +873,9 @@ footer section>div a{
     margin-bottom: 10px;
 }
 
-}
 
-@media (min-width: 481px) and (max-width: 767px) {
+
+@media (min-width: 480px) and (max-width: 800px) {
 
     #pop hr{
         width:440px;
