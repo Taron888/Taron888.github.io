@@ -1228,4 +1228,11 @@ footer>div>h2>b{
         margin-top: -20px;
         padding-bottom: 20px;
     }
+    #team{
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        grid-auto-rows: auto;
+        grid-gap: 30px;
+        padding:0px 20px 0px 20px;
+    }
 }
