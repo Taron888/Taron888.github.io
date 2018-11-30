@@ -1379,4 +1379,12 @@ footer>div>h2>b{
     #cont>div:nth-of-type(1){
         width:100%;
     }
+    #price a{
+        padding: 13px 35px 13px 35px;
+        text-decoration: none;
+        color:#00d999;
+        font-family:sans-serif;
+        border-bottom:2px solid #00d999;
+        font-size:14px; 
+    }
 }
