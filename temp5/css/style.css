@@ -1230,7 +1230,7 @@ footer>div>h2>b{
     }
     #team{
         display:grid;
-        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
         grid-auto-rows: auto;
         grid-gap: 30px;
         padding:0px 20px 0px 20px;
