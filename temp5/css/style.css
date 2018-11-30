@@ -1302,7 +1302,7 @@ footer>div>h2>b{
         grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
         grid-auto-rows:auto;
         grid-gap: 30px;
-        padding:0px 50px 50px 50px;
+        padding:0px 10px 50px 10px;
         background-color: black;
         opacity: .8;
         z-index: 1;
