@@ -1327,4 +1327,11 @@ footer>div>h2>b{
         z-index: 99999;
         margin-top: -30px;
     }
+    #price{
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        grid-auto-rows:auto;
+        grid-gap: 20px;
+        padding:0px 20px 80px 20px;
+    }
 }
