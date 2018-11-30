@@ -1282,11 +1282,19 @@ footer>div>h2>b{
         padding-left:15px;
         width:130px;
         z-index: 9999;
-     }
+    }
      #team>div>div>div>div{
          display:flex;
          justify-content: center;
          margin-top:0px;
          margin-left: 45px;
-     }
+    }
+    .serv{
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        grid-auto-rows:315px;
+        grid-column-gap: 30px;
+        grid-row-gap: 25px;
+        padding:0px 10px 0px 10px;
+    }
 }
