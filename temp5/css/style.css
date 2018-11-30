@@ -1331,8 +1331,8 @@ footer>div>h2>b{
         display:grid;
         grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
         grid-auto-rows:auto;
-        grid-gap: 20px;
-        padding:0px 20px 80px 20px;
+        grid-gap: 30px;
+        padding:0px 10px 80px 10px;
     }
     #blog>section:nth-of-type(2){
         display:grid;
@@ -1340,5 +1340,20 @@ footer>div>h2>b{
         grid-auto-rows:auto;
         grid-gap: 30px;
         padding:0px 40px 80px 40px;
+    }
+    #price h1{
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        color:white;
+    }
+    #price h2{
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        color:#00d999;
+    }
+    #price h3{
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        color:rgb(131, 131, 131);
     }
 }
