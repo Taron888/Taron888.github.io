@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin:0px;
 }
