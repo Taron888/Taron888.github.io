@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Unlock');
+body{
+    margin:0px;
+}
+#demo{
+    width:100%;
+    background-size: cover;
+    height: 650px;
+    transition: 0.5s;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+#demo h1{
+    margin-top: 0px;
+    font-size: 70px;
+    padding-top: 250px;
+    color:white;
+    text-transform: capitalize;
+    font-family: 'Unlock', cursive;
+}
+#demo h2{
+    margin-top: 0px;
+    font-size: 70px;
+    padding-top: 250px;
+    color:white;
+    text-transform: capitalize;
+    font-family: 'Unlock', cursive;
+}
+#demo h3{
+    margin-top: 0px;
+    font-size: 70px;
+    padding-top: 250px;
+    color:white;
+    text-transform: capitalize;
+    font-family: 'Unlock', cursive;
+}
+#demo h4{
+    margin-top: 0px;
+    font-size: 70px;
+    padding-top: 250px;
+    color:white;
+    text-transform: capitalize;
+    font-family: 'Unlock', cursive;
+}
+#demo2{
+    width:150px;
+    height: 150px;
+    background-size: cover;
+    z-index: 9999;
+    margin-top:-580px;
+    margin-left: 45%;
+    cursor: pointer;
+    box-shadow: 0 0 10px;
+    border-radius: 50%;
+    transition-duration: 1s;
+    transition: 1.5s;
+}
+#demo2:hover{
+    transform: scale(1.3)
+}
