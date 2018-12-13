@@ -11,68 +11,69 @@
 
 <body>
     <div id="demo">
-        
-        
+
+
     </div>
-     <div id="demo2" title="" ></div>
+    <div id="demo2" title="" onclick="print()"></div>
     <script>
         function foo() {
-        let a = new Date();
-        if (a.getMonth() == 11 || a.getMonth() == 0 || a.getMonth() == 1) {
-            document.getElementById('demo').style.backgroundImage = "url('images/winter.jpg')";
-            document.getElementById('demo').innerHTML = '<h1>Its the winter time</h1>';
-            let c = new Date();
-            let arr1 = [1, 2, 3, 4, 5, 6, 7,17,18,19, 20, 21, 22, 23, 24];
-            if (arr1.indexOf(c.getHours()) != -1) {
-                document.getElementById('demo2').style.backgroundImage="url('images/moon.png')";
-                document.getElementById('demo2').getAttributeNode("title").value = "Now is Nigth";
-            } else {
-                document.getElementById('demo2').style.backgroundImage="url('images/sun.png')";
-                document.getElementById('demo2').style.backgroundColor="goldenrod";
-                document.getElementById('demo2').getAttributeNode("title").value = "Now is Day";
-            }
-        } else if (a.getMonth() == 2 || a.getMonth() == 3 || a.getMonth() == 4) {
-            document.getElementById('demo').style.backgroundImage = "url('images/spring.jpg')";
-            document.getElementById('demo').innerHTML = '<h2>Its the spring time</h2>';  let c = new Date();
-            let arr1 = [1, 2, 3, 4, 5, 6, 7,18,19, 20, 21, 22, 23, 24];
-            if (arr1.indexOf(c.getHours()) != -1) {
-                document.getElementById('demo2').style.backgroundImage="url('images/moon.png')";
-                document.getElementById('demo2').getAttributeNode("title").value = "Now is Nigth";
-            } else {
-                document.getElementById('demo2').style.backgroundImage="url('images/sun.png')";
-                document.getElementById('demo2').style.backgroundColor="goldenrod";
-                document.getElementById('demo2').getAttributeNode("title").value = "Now is Day";
-            }
+            let a = new Date();
+            if (a.getMonth() == 11 || a.getMonth() == 0 || a.getMonth() == 1) {
+                document.getElementById('demo').style.backgroundImage = "url('images/winter.jpg')";
+                document.getElementById('demo').innerHTML = '<h1>Its the winter time</h1>';
+                let c = new Date();
+                let arr1 = [1, 2, 3, 4, 5, 6, 7, 17, 18, 19, 20, 21, 22, 23, 24];
+                if (arr1.indexOf(c.getHours()) != -1) {
+                    document.getElementById('demo2').style.backgroundImage = "url('images/moon.png')";
+                    document.getElementById('demo2').getAttributeNode("title").value = "Now is Nigth";
+                } else {
+                    document.getElementById('demo2').style.backgroundImage = "url('images/sun.png')";
+                    document.getElementById('demo2').style.backgroundColor = "goldenrod";
+                    document.getElementById('demo2').getAttributeNode("title").value = "Now is Day";
+                }
+            } else if (a.getMonth() == 2 || a.getMonth() == 3 || a.getMonth() == 4) {
+                document.getElementById('demo').style.backgroundImage = "url('images/spring.jpg')";
+                document.getElementById('demo').innerHTML = '<h2>Its the spring time</h2>';
+                let c = new Date();
+                let arr1 = [1, 2, 3, 4, 5, 6, 7, 18, 19, 20, 21, 22, 23, 24];
+                if (arr1.indexOf(c.getHours()) != -1) {
+                    document.getElementById('demo2').style.backgroundImage = "url('images/moon.png')";
+                    document.getElementById('demo2').getAttributeNode("title").value = "Now is Nigth";
+                } else {
+                    document.getElementById('demo2').style.backgroundImage = "url('images/sun.png')";
+                    document.getElementById('demo2').style.backgroundColor = "goldenrod";
+                    document.getElementById('demo2').getAttributeNode("title").value = "Now is Day";
+                }
 
-        } else if (a.getMonth() == 5 || a.getMonth() == 6 || a.getMonth() == 7) {
-            document.getElementById('demo').style.backgroundImage = "url('images/summer.jpg')";
-            document.getElementById('demo').innerHTML = '<h3>Its the summer time</h3>';
-            let c = new Date();
-            let arr1 = [1, 2, 3, 4, 5, 6,21, 22, 23, 24];
-            if (arr1.indexOf(c.getHours()) != -1) {
-                document.getElementById('demo2').style.backgroundImage="url('images/moon.png')";
-                document.getElementById('demo2').getAttributeNode("title").value = "Now is Nigth";
-            } else {
-                document.getElementById('demo2').style.backgroundImage="url('images/sun.png')";
-                document.getElementById('demo2').style.backgroundColor="goldenrod";
-                document.getElementById('demo2').getAttributeNode("title").value = "Now is Day";
-            }
-        } else if (a.getMonth() == 8 || a.getMonth() == 9 || a.getMonth() == 10) {
-            document.getElementById('demo').style.backgroundImage = "url('images/authumn.jpg')";
-            document.getElementById('demo').innerHTML = '<h4>Its the autumn time</h4>';
-            let c = new Date();
-            let arr1 = [1, 2, 3, 4, 5, 6, 7,19, 20, 21, 22, 23, 24];
-            if (arr1.indexOf(c.getHours()) != -1) {
-                document.getElementById('demo2').style.backgroundImage="url('images/moon.png')";
-                document.getElementById('demo2').getAttributeNode("title").value = "Now is Nigth";
-            } else {
-                document.getElementById('demo2').style.backgroundImage="url('images/sun.png')";
-                document.getElementById('demo2').style.backgroundColor="goldenrod";
-                document.getElementById('demo2').getAttributeNode("title").value = "Now is Day";
+            } else if (a.getMonth() == 5 || a.getMonth() == 6 || a.getMonth() == 7) {
+                document.getElementById('demo').style.backgroundImage = "url('images/summer.jpg')";
+                document.getElementById('demo').innerHTML = '<h3>Its the summer time</h3>';
+                let c = new Date();
+                let arr1 = [1, 2, 3, 4, 5, 6, 21, 22, 23, 24];
+                if (arr1.indexOf(c.getHours()) != -1) {
+                    document.getElementById('demo2').style.backgroundImage = "url('images/moon.png')";
+                    document.getElementById('demo2').getAttributeNode("title").value = "Now is Nigth";
+                } else {
+                    document.getElementById('demo2').style.backgroundImage = "url('images/sun.png')";
+                    document.getElementById('demo2').style.backgroundColor = "goldenrod";
+                    document.getElementById('demo2').getAttributeNode("title").value = "Now is Day";
+                }
+            } else if (a.getMonth() == 8 || a.getMonth() == 9 || a.getMonth() == 10) {
+                document.getElementById('demo').style.backgroundImage = "url('images/authumn.jpg')";
+                document.getElementById('demo').innerHTML = '<h4>Its the autumn time</h4>';
+                let c = new Date();
+                let arr1 = [1, 2, 3, 4, 5, 6, 7, 19, 20, 21, 22, 23, 24];
+                if (arr1.indexOf(c.getHours()) != -1) {
+                    document.getElementById('demo2').style.backgroundImage = "url('images/moon.png')";
+                    document.getElementById('demo2').getAttributeNode("title").value = "Now is Nigth";
+                } else {
+                    document.getElementById('demo2').style.backgroundImage = "url('images/sun.png')";
+                    document.getElementById('demo2').style.backgroundColor = "goldenrod";
+                    document.getElementById('demo2').getAttributeNode("title").value = "Now is Day";
+                }
             }
         }
-        }
-        setInterval(foo,100)
+        setInterval(foo, 100)
     </script>
 </body>
 
