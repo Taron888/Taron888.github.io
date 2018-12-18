@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Name Input</title>
+</head>
+
+<body>
+    <div id="tar">
+    <input type="text"  id="name" placeholder="First and Lastname" required>
+    <input type="button" value="sign in" onclick='myfunc(this.element)' id="but">
+    <h2 id="please"></h2>
+    </div>
+    <script>
+        let arr1=[];
+        function myfunc() {
+            document.getElementById('please').innerHTML='Thank You!'
+            document.getElementById('please').style.visibility='hidden';
+          document.getElementById('please').style.fontSize='40px';
+          let element=document.getElementById('name').value;
+          let obj=new Object();
+          let arr=element.split(' ');
+         if(arr[0]==''){
+             alert(`Dear person you not registered`);
+         }
+         else if(arr[0]!='' && arr[1]==undefined){
+             alert(`Dear ${arr[0]} please write your name or lastname`)
+         }
+         else if(arr[0]!='' && arr[1]!=undefined){
+             if(arr1.indexOf(`${arr[0]} and ${arr[1]}`)!=-1){
+                document.getElementById('tar').innerHTML+=`<h3>Error!! Dear ${arr[0]} ${arr[1]} you cant register again</h3>`;
+             }
+             else{
+             arr1.push(`${arr[0]} and ${arr[1]}`);
+             document.getElementById('tar').innerHTML+=`<h1>Dear ${arr[0]} ${arr[1]} You Sign In</h1>`;
+             document.getElementById('please').style.visibility='visible';
+             document.getElementById('please').style.fontSize='10px';
+             }
+         }
+        }
+        console.log(arr1);
+        </script>
+</body>
+
+</html>
