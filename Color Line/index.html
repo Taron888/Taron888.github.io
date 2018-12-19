@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Color Line</title>
+</head>
+<body>
+    <section id="sect1">
+    <div id="first">
+        <h1>Color Line (write with JavaScript)</h1>
+        <input type="password" placeholder="Password" required id="pass">
+        <input type="button" value="Play" onclick="gameplay(this.password)" id="play">
+    </div>
+</section>
+<script>
+    function gameplay() {
+        let password=document.getElementById('pass').value;
+       if(password=='letsplay'){
+          document.getElementById('sect1').innerHTML='<section id="sect2"></section>';
+          let second=document.createElement("div");  
+          document.getElementById('sect2').appendChild(second);
+          second.setAttribute('Id','gridig');
+       }
+       else{
+        document.getElementById('first').innerHTML+='<h3>Wrong Password !!!<h3>'
+       }
+    }
+</script>
+</body>
+</html>
