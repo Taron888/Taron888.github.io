@@ -81,10 +81,9 @@ body{
     background-color: azure;
 }
 #gridig>div{
-    border-radius: 5px;
-    border:1px solid black;
+    border-radius: 15px;
     transition-duration: 1s;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 15px;
     cursor: pointer;
 }
 #gridig>div:hover{

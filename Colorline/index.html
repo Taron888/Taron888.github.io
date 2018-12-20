@@ -23,30 +23,77 @@
           let second=document.createElement('div');  
           document.getElementById('sect2').appendChild(second);
           second.setAttribute('Id','gridig');
+          function foo(element) {
+             let numb=Math.floor(Math.random() * 5);
+             if(numb==0){
+             element.style.backgroundColor='red';
+             }
+             else if(numb==1){
+                element.style.backgroundColor='green';
+             }
+             else if(numb==2){
+                element.style.backgroundColor='blue';
+             }
+             else if(numb==3){
+                element.style.backgroundColor='yellow';
+             }
+             else if(numb==4){
+                element.style.backgroundColor='orange';
+             }
+             
+             }
              let block1=document.createElement('div'); 
              document.getElementById('gridig').appendChild(block1);
+             block1.setAttribute('Id','block1');
+             document.getElementById('block1').onclick=function() { foo(this) };
+
              let block2=document.createElement('div'); 
              document.getElementById('gridig').appendChild(block2);
+             block2.setAttribute('Id','block2');
+             document.getElementById('block2').onclick=function() { foo(this) };
+
              let block3=document.createElement('div'); 
              document.getElementById('gridig').appendChild(block3);
+             block3.setAttribute('Id','block3');
+             document.getElementById('block3').onclick=function() { foo(this) };
+
              let block4=document.createElement('div'); 
              document.getElementById('gridig').appendChild(block4);
+             block4.setAttribute('Id','block4');
+             document.getElementById('block4').onclick=function() { foo(this) };
+
              let block5=document.createElement('div'); 
              document.getElementById('gridig').appendChild(block5);
+             block5.setAttribute('Id','block5');
+             document.getElementById('block5').onclick=function() { foo(this) };
+             
              let block6=document.createElement('div'); 
              document.getElementById('gridig').appendChild(block6);
+             block6.setAttribute('Id','block6');
+             document.getElementById('block6').onclick=function() { foo(this) };
+
              let block7=document.createElement('div'); 
              document.getElementById('gridig').appendChild(block7);
+             block7.setAttribute('Id','block7');
+             document.getElementById('block7').onclick=function() { foo(this) };
+             
              let block8=document.createElement('div'); 
              document.getElementById('gridig').appendChild(block8);
+             block8.setAttribute('Id','block8');
+             document.getElementById('block8').onclick=function() { foo(this) };
+            
              let block9=document.createElement('div'); 
              document.getElementById('gridig').appendChild(block9);
-              
+             block9.setAttribute('Id','block9');
+             document.getElementById('block9').onclick=function() { foo(this) };
+           
+
        }
        else{
         document.getElementById('first').innerHTML+='<h3>Wrong Password !!!<h3>'
        }
     }
+    
 </script>
 </body>
 </html>
