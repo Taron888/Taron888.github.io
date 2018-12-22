@@ -11,6 +11,7 @@
     <section id="sect1">
     <div id="first">
         <h1>Color Line (write with JavaScript)</h1>
+        <input type="text" placeholder="Name or Username"  id="user">
         <input type="password" placeholder="Password" required id="pass">
         <input type="button" value="Play" onclick="gameplay(this.password)" id="play">
     </div>
@@ -19,7 +20,12 @@
     function gameplay() {
         let password=document.getElementById('pass').value;
        if(password=='letsplay'){
+           let username=document.getElementById('user').value;
           document.getElementById('sect1').innerHTML='<section id="sect2"></section>';
+          let menu=document.createElement('div');
+          document.getElementById('sect2').appendChild(menu);
+          menu.setAttribute('Id','menu');
+          document.getElementById('menu').innerHTML=`<h2>${username}</h2>`;
           let second=document.createElement('div');  
           document.getElementById('sect2').appendChild(second);
           second.setAttribute('Id','gridig');
@@ -86,8 +92,7 @@
              document.getElementById('gridig').appendChild(block9);
              block9.setAttribute('Id','block9');
              document.getElementById('block9').onclick=function() { foo(this) };
-           
-
+       
        }
        else{
         document.getElementById('first').innerHTML+='<h3>Wrong Password !!!<h3>'
