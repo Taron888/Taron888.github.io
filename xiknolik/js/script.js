@@ -1,3 +1,13 @@
+function toyfunc() {
+ let   element=document.getElementById('toy').getElementsByTagName('div').value;
+    element.style.marginLeft='12px'
+}
+
+
+
+
+
+
 function choisex() {
     document.getElementById('tapo').style.display='none';
     function foo(elment) {
