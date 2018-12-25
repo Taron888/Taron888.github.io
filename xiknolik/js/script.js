@@ -4,6 +4,7 @@ function choisex() {
         elment.style.backgroundImage="url('images/x.png')";
         document.getElementById('tapo').style.display='inline-block';
         document.getElementById('tapx').style.display='none';
+        
     }
     let element = document.getElementById('tapx').value;
     document.getElementById('block1').onclick=function () { foo(this) };
