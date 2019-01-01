@@ -719,7 +719,7 @@ nav>div:nth-of-type(2){
     }
     #glob{
         display:grid;
-        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
         grid-auto-rows: 300px;
         grid-gap:3200px;
         margin-top:230px;
