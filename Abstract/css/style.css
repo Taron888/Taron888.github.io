@@ -688,7 +688,9 @@ nav>div:nth-of-type(2){
     .navmenu>li:nth-of-type(7){
         display:inline-block;
     }
-
+    .navmenu>li:nth-of-type(7)>a{
+        font-size: 28px;
+    }
     .navmenu>li:nth-of-type(7)>ul{
         display:none;
     }
