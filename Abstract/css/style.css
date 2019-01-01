@@ -688,8 +688,13 @@ nav>div:nth-of-type(2){
     .navmenu>li:nth-of-type(7){
         display:inline-block;
     }
+
+    .navmenu>li:nth-of-type(7)>ul{
+        display:none;
+    }
     .logo img{
-        width:30%;
+        width:50px;
         height: 50px;
+        margin-left: 30px;
     }
 }
