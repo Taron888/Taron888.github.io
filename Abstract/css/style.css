@@ -719,15 +719,15 @@ nav>div:nth-of-type(2){
     }
     #glob{
         display:grid;
-        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
         grid-auto-rows: 300px;
         grid-gap:50px;
         margin-top:230px;
-        padding:0px 10px 0px 10px;
+        padding:0px 5px 0px 5px;
     }
     #sect1>div>img{
-        width:100%;
-        height: 140px;
+        width:200px;
+        height: 200px;
     }
     #sect1{
         z-index: 0;
