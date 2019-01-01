@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Abstract</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href=""><img src="images/logo.png" alt="logo"></a></div>
+        <div>
+            <ul class="navmenu">
+                <li><a href="#home">Home</a></li>
+                <li id="drop1"><a href="#cat"  onmousemove="drmenu1()">Categories</a>
+                <ul style="visibility: hidden" onmouseleave="close1()">
+                    <li><a href="">Wordpress</a><hr></li>
+                    <li><a href="">HTML</a><hr></li>
+                    <li><a href="">Photography</a><hr></li>
+                    <li><a href="">UI</a><hr></li>
+                    <li><a href="">Mockups</a><hr></li>
+                    <li><a href="">Branding</a><hr></li>
+                </ul>
+                </li>
+                <li id="drop2"><a href="#blog" onmousemove="drmenu2()">Blog</a>
+                    <ul style="visibility: hidden" onmouseleave="close2()">
+                        <li><a href="">Video Post</a><hr></li>
+                        <li><a href="">Audio Post</a><hr></li>
+                        <li><a href="">Gallery Post</a><hr></li>
+                        <li><a href="">Standard Post</a><hr></li>
+                    </ul>
+                </li>
+                <li><a href="#style">Style</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cont">Contact</a></li>
+                <li id="respmenu" style="display:none;"><a href="">Menu</a>
+                   <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cat">Categories</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#style">Style</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cont">Contact</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="glob">
+        <section id="sect1">
+            <div>
+            <script>
+               let j=0;
+               let images=[];
+               let time=4000;
+
+               images[0]='images/featured-1.jpg';
+               images[1]='images/featured-2.jpg';
+               images[2]='images/featured-3.jpg';
+
+               function changeImg() {
+                   document.slide.src=images[j];
+
+                   if(j<images.length-1) {
+                       j++;
+                   } else{
+                       j=0;
+                   }
+
+                   setTimeout("changeImg()",time)
+               }
+            window.onload=changeImg;
+            </script>
+         <img name="slide" width="100%" height="500px">
+         <div id="text">
+             <p>September 06, 2016 Taron Vardanyan</p>
+             <h3>Minimalism Never Goes Out of Style</h3>
+                   <h3> Enhancing Your Designs</h3>
+         </div>
+        </div>
+        <section id="blocks">
+            <section>
+                <div onmouseover="divchange1()"><div id="box1" style="height:0px" onmouseout="divclose1()"></div></div>
+                <a href="">Design,UI</a>
+                <a href=""><h2>This Is Another </h2></a>
+                <a href=""><h2>Standard Format Post.</h2></a>
+                <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.</p>
+            </section>
+            <section>
+                    <div onmouseover="divchange2()"><div  id="box2" style="height:0px" onmouseleave="divclose2()"></div></div>
+                    <audio controls>
+                            <source src="audio/song1.mp3" type="audio/mpeg">
+                          </audio>
+                    <a href="">Design,UI</a>
+                    <a href=""><h2>This Is Another </h2></a>
+                    <a href=""><h2>Standard Format Post.</h2></a>
+                    <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.</p>
+            </section>
+            <section>
+                    <div onmouseover="divchange3()"><div  id="box3" style="height:0px" onmouseleave="divclose3()"></div></div>
+                    <a href="">Design,UI</a>
+                    <a href=""><h2>This Is Another </h2></a>
+                    <a href=""><h2>Standard Format Post.</h2></a>
+                    <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.</p>
+            </section>
+            <section>
+                    <div id="slide2" onmouseover="timing()" style="visibility: visible;">
+                    <div id="slImg1" style="height:0px">
+                            <div id="slImg2" style="height:0px">
+                                    <div id="slImg3" style="height:0px" onmouseleave="closetiming()"></div>
+                            </div>
+                    </div>
+                    
+                    </div>
+                    <a href="">Design,UI</a>
+                    <a href=""><h2>This Is Another </h2></a>
+                    <a href=""><h2>Standard Format Post.</h2></a>
+                    <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.</p>
+            </section>
+            <section>
+                    <div onmouseover="divchange5()"><div  id="box5" style="height:0px" onmouseleave="divclose5()"></div></div>
+                    <a href="">Design,UI</a>
+                    <a href=""><h2>This Is Another </h2></a>
+                    <a href=""><h2>Standard Format Post.</h2></a>
+                    <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.</p>
+            </section> 
+            <section>
+                    <div onmouseover="divchange6()"><div  id="box6" style="height:0px" onmouseleave="divclose6()"></div></div>
+                    <a href="">Design,UI</a>
+                    <a href=""><h2>This Is Another </h2></a>
+                    <a href=""><h2>Standard Format Post.</h2></a>
+                    <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.</p>
+            </section>
+        </section>
+        </section>
+        <section id="sect2">
+                <section>
+                    <div onmouseover="sect2()"><div id="aj1" style="height:0px" onmouseleave='closeSect2()'></div></div>
+                    <a href="">Design,UI</a>
+                    <a href=""><h2>This Is Another </h2></a>
+                    <a href=""><h2>Standard Format Post.</h2></a>
+                    <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.</p>
+                </section>
+                <section id="report">
+                    <p>Good design is making something intelligible and memorable. Great design is making something memorable and meaningful.</p>
+                    <p>Dieter Rams</p>
+                </section>
+                <section>
+                    <div onmouseover="sect3()"><div id="aj2" style="height:0px" onmouseleave='closeSect3()'></div></div>
+                    <a href="">Design,UI</a>
+                    <a href=""><h2>This Is Another </h2></a>
+                    <a href=""><h2>Standard Format Post.</h2></a>
+                    <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.</p>
+                </section>
+                <section id="report2">
+                    <p>Looking for affordable & reliable web hosting? We recommend Domain.</p>
+                    <a href="http://www.domain.com">http://www.domain.com</a>
+                </section>
+                <section>
+                    <div onmouseover="sect5()"><div id="aj3" style="height:0px" onmouseleave='closeSect5()'></div></div>
+                    <a href="">Design,UI</a>
+                    <a href=""><h2>This Is Another </h2></a>
+                    <a href=""><h2>Standard Format Post.</h2></a>
+                    <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.</p>
+                </section>
+                <section>
+                    <div onmouseover="sect6()"><div id="aj4" style="height:0px" onmouseleave='closeSect6()'></div></div>
+                    <a href="">Design,UI</a>
+                    <a href=""><h2>This Is Another </h2></a>
+                    <a href=""><h2>Standard Format Post.</h2></a>
+                    <p>Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua cillum in consequat consequat in culpa in anim.</p>
+                </section>
+        </section>
+    </section>
+    <section id="cont">
+        <section>
+        <div>
+            <p>About Our Site</p>
+            <hr>
+            <p>Lorem ipsum Ut velit dolor Ut labore id fugiat in ut fugiat nostrud qui in dolore commodo eu magna Duis cillum dolor officia esse mollit proident Excepteur exercitation nulla. Lorem ipsum In reprehenderit commodo aliqua irure labore.</p>
+        </div>
+        <div>
+                <p>Site Links</p>
+                <hr>
+                <a href="">About Us</a>
+                <a href="">Blog</a>
+                <a href="">FAQ</a>
+                <a href="">Terms</a>
+                <a href="">Privacy Policy</a>
+        </div>
+        <div>
+                <p>Social</p>
+                <hr>
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
+                <a href="">Dribbble</a>
+                <a href="">Google+</a>
+                <a href="">Instagram</a>
+        </div>
+        <div>
+                <p>Subscribe</p>
+                <hr>
+                <p>Keep yourself updated. Subscribe to our newsletter.</p>
+                <input type="text" placeholder="Type & press send">
+                <input type="button" value="SEND">
+        </div>
+        </section>
+    </section>
+</body>
+</html>
