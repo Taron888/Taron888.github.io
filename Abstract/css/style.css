@@ -726,7 +726,7 @@ nav>div:nth-of-type(2){
         padding:0px 5px 0px 5px;
     }
     #sect1>div>img{
-        width:323px;
+        width:315px;
         height: 330px;
     }
     #sect1{
@@ -776,7 +776,7 @@ nav>div:nth-of-type(2){
     #blocks>section{
         border-radius: 8px;
         z-index: 9;
-        width:300px;
+        width:294px;
         margin-bottom: 20px;
     }
     #blocks>section:nth-of-type(1)>div{
