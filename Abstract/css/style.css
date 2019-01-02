@@ -734,6 +734,7 @@ nav>div:nth-of-type(2){
     }
     #sect2{
         z-index: 0;
+        padding:0px 10px 0px 10px;
     }
     #text{
         display:flex;
@@ -865,5 +866,9 @@ nav>div:nth-of-type(2){
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
     }
-    
+    #sect2 section{
+        border-radius: 8px;
+        z-index: 99999;
+        width:300px;
+    }
 }
