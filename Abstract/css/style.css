@@ -971,6 +971,10 @@ nav>div:nth-of-type(2){
         color:rgb(143, 140, 140);
         padding: 30px 40px 10px 40px;
     }
+    #sect1>div{
+        width:100%;
+        border-radius: 12px;
+    }
     
 
 }
