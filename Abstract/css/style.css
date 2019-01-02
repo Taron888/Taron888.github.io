@@ -866,9 +866,38 @@ nav>div:nth-of-type(2){
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
     }
+    #sect2>section:nth-of-type(2){
+        border-radius: 8px;
+        z-index: 99999;
+        width:242px;
+    }
+    #sect2>section:nth-of-type(4){
+        border-radius: 8px;
+        z-index: 99999;
+        width:242px;
+    }
     #sect2 section{
         border-radius: 8px;
         z-index: 99999;
         width:290px;
     }
+    #report{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 3px;
+        margin-top: 50px;
+        
+    }
+    #cont>section{
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+        grid-auto-rows: 300px;
+        grid-gap:30px;
+        margin-top:4050px;
+        padding:0px 30px 100px 30px;
+    }
+
 }
