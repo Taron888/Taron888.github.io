@@ -16,7 +16,7 @@ function close2() {
 }
 
 function divchange1() {
-    document.querySelector('#box1').setAttribute('style', 'height:460px')
+    document.querySelector('#box1').setAttribute('style', 'height:100%')
 }
 
 function divclose1() {
@@ -24,7 +24,7 @@ function divclose1() {
 }
 
 function divchange2() {
-    document.querySelector('#box2').setAttribute('style', 'height:460px')
+    document.querySelector('#box2').setAttribute('style', 'height:100%')
 }
 
 function divclose2() {
@@ -32,7 +32,7 @@ function divclose2() {
 }
 
 function divchange3() {
-    document.querySelector('#box3').setAttribute('style', 'height:460px')
+    document.querySelector('#box3').setAttribute('style', 'height:100%')
 }
 
 function divclose3() {
@@ -42,7 +42,7 @@ function divclose3() {
 
 
 function divchange5() {
-    document.querySelector('#box5').setAttribute('style', 'height:460px')
+    document.querySelector('#box5').setAttribute('style', 'height:100%')
 }
 
 function divclose5() {
@@ -50,7 +50,7 @@ function divclose5() {
 }
 
 function divchange6() {
-    document.querySelector('#box6').setAttribute('style', 'height:460px')
+    document.querySelector('#box6').setAttribute('style', 'height:100%')
 }
 
 function divclose6() {
@@ -69,16 +69,16 @@ let i=0;
 function timing(){
 if(i==arr[0]){
     document.querySelector('#slide2').setAttribute('style', 'visibility: hidden;');
-    document.querySelector('#slImg1').setAttribute('style', 'height:460px');
+    document.querySelector('#slImg1').setAttribute('style', 'height:100%');
 i++;
 }
 else if(i==arr[1]){
-    document.querySelector('#slImg2').setAttribute('style', 'height:460px');
+    document.querySelector('#slImg2').setAttribute('style', 'height:100%');
 i++;
 }
 else if(i==arr[2]){
     document.querySelector('#slide2').setAttribute('style', 'visibility: visible;');
-    document.querySelector('#slImg3').setAttribute('style', 'height:460px');
+    document.querySelector('#slImg3').setAttribute('style', 'height:100%');
 i=0;
 }
 setTimeout('timing()',3000);
