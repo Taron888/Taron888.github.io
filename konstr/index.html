@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Konstructur</title>
+</head>
+<body>
+  <section id="home">
+   
+  </section>
+  <script>
+    let Adress = 'https://randomuser.me/api/?results=20';
+    let divNumb = Number(Adress.substr(Adress.length - 2));
+    let Create = document.getElementById('home');
+    
+    for (let i=0; i<divNumb ;i++) {
+    let stringTag="<div></div>";
+    Create.innerHTML=stringTag.repeat(divNumb);
+    }
+  </script>
+</body>
+</html>
