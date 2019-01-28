@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    width:100%;
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgb(48, 47, 47);
+    padding-top: 20px;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+}
+nav div {
+    width:40%;
+    display:flex;
+    justify-content: space-around; 
+}
+nav>h1 {
+    padding-left: 30px;
+    font-family: 'Baloo Thambi', cursive;
+    color:whitesmoke;
+    text-shadow: 3px 3px black;
+    font-size: 35px;
+    margin-top: -10px;
+}
+nav div>a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Baloo Thambi', cursive;
+    color:whitesmoke;
+    transition-duration: 0.2s;
+}
+nav div>a:hover{
+    transform: scale(1.06);
+    color:silver;
+
+}
+section:nth-of-type(1){
+    width:100%;
+    height: 665px;
+    background:linear-gradient(to right,rgb(5, 5, 27),black);
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-of-type(1) h3{
+    font-family: 'Josefin Sans', sans-serif;
+    color:silver;
+    font-size: 75px;
+    text-transform: capitalize;
+    position: relative;
+    top:280px;
+}
+section:nth-of-type(1) b{
+    transition-duration: 0.4s;
+    border:3px solid transparent;
+    padding:20px 8px 5px 8px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+section:nth-of-type(1) b:hover{
+    border:3px solid white;
+    background-color: white;
+    color:black;
+}
