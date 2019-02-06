@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+*,
+*:before,
+*:after  { box-sizing: inherit; }
+
+.slide-one h1{ 
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5.5vw;
+    line-height: 1.2;
+    margin: 0.5em 0 3em;
+    text-shadow: 1px 1px 1px #333;
+}
+
+
+
+
