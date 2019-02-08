@@ -1074,7 +1074,7 @@ form a:hover{
         position: relative;
         top:8%;
         width:200%;
-        height: 50vh;
+        height: 30vh;
        
     }
     #lists:hover ul{
@@ -1082,8 +1082,8 @@ form a:hover{
     }
     #MenuItems>li>a{
         font-size: 20px;
-        padding-bottom: 23px;
-        padding-top: 23px;
+        padding-bottom: 10px;
+        padding-top: 10px;
         display:block;
         padding-left: 250px;
         padding-right: 250px;
@@ -1103,8 +1103,8 @@ form a:hover{
     #MenuItems>li:hover a{
         position: relative;
         display:inline-block;
-        padding-bottom: 23px;
-        padding-top: 23px
+        padding-bottom: 10px;
+        padding-top: 10px
     }
     #home{
         display:grid;
