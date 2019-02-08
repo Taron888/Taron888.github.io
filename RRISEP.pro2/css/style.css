@@ -71,7 +71,13 @@ nav>div:nth-of-type(2)>ul>a:hover{
 nav>div:nth-of-type(2)>ul>li:nth-of-type(9){
     display:none;
     font-size: 50px;
+    color:black;
 }
+#lists>h1{
+    color:black;
+    margin-top: 0px;
+}
+
 nav>div:nth-of-type(2) a{
     text-decoration: none;
     text-transform: uppercase;
@@ -1066,9 +1072,9 @@ form a:hover{
         padding: 0px;
         background-color: white;
         position: relative;
-        top:2.4%;
+        top:8%;
         width:200%;
-        height: 85vh;
+        height: 70vh;
        
     }
     #lists:hover ul{
