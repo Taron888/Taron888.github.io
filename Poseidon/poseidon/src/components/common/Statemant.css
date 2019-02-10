@@ -1,0 +1,33 @@
+.second{
+    width:100%;
+    text-align: center;
+    height: 10vh;
+    margin-top: 8%;
+}
+.first{
+    width:100%;
+    text-align: center;
+    height: 10vh;
+    margin-top: 8%;
+}
+.first>h2{
+   display:inline-block;
+   color:#DF013A;
+   font-family: 'Righteous', cursive;
+   padding-bottom: 5px;
+   border-bottom: 3px solid #DF013A;
+   transition: 0.5s;
+   text-shadow: 0 0 5px black;
+   font-size: 30px;
+}
+.second>h2{
+   display:inline-block;
+   color: white;
+   font-family: 'Righteous', cursive;
+   padding:5px 12px 5px 12px;
+   background-color: #DF013A;
+   transition: 0.5s;
+   box-shadow: 0 0 5px black;
+   text-shadow: 0 0 5px black;
+   font-size: 30px;
+}

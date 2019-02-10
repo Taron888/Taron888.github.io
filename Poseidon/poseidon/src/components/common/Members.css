@@ -1,0 +1,85 @@
+.Members{
+    width:100%;
+    height: 50vh;
+    margin-top:8%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    grid-auto-rows:155%;
+    grid-gap: 5%;
+    padding:0% 8.5% 0% 8.5%;
+}
+.Members section{
+    box-shadow: 0 0 10px black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0px 25px 25px 25px;
+   
+}
+.Members>section>div{
+    width:60%;
+    height: 70%;
+    border-radius: 50%;
+    margin-top: 7%;
+    margin-bottom: 4%;
+}
+.Members>section:nth-of-type(1) div{
+    background-image: url(../images/member1.jpeg);
+    background-size: cover;
+}
+.Members>section:nth-of-type(2) div{
+    background-image: url(../images/member3.jpg);
+    background-size: cover;
+}
+.Members>section:nth-of-type(3) div{
+    background-image: url(../images/member2.jpg);
+    background-size: cover;
+}
+.Members>section>h3{
+    font-family: 'Righteous', cursive;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.Members>section>p{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+.Members>section>button{
+    width:50%;
+    height: 20%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    border-radius:4px;
+    box-shadow: 0 0 5px black;
+    border:1px solid transparent;
+    background-color: #DF013A;
+    color:whitesmoke;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.Members>section>button:hover{
+    transform: scale(1.1)
+}
+.firstmemb{
+    background-color: rgb(235, 110, 201);
+    transition-duration: 1s;
+    border-radius:4px;
+}
+
+.secondmemb{
+    background-color:rgb(240, 132, 93);
+    transition-duration: 1s;
+}
+.secondmemb>h3{
+    color:whitesmoke;
+}
+.firstmemb>div{
+    box-shadow: 0 0 10px black;
+    transition-duration: 0.5s
+}
+.secondmemb>div{
+    box-shadow: 0 0 25px white;
+    transition-duration: 0.5s
+}
